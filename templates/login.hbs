@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Voting</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Online Voting System</h1>
+    </div>
+    <div class="content">
+      <div class="wrapper">
+          
+          <h1>Login</h1>
+          <form action="/login" method="post">
+          <div class="input-box">
+            <input type="text" placeholder="Voter ID" name="voterid" id="vote" autocomplete="off"/>
+            <i class="bx bxs-user-circle"></i>
+            <span class="error" id="voter-error"></span>
+          </div>
+
+          <div class="input-box">
+            <input type="password" placeholder="Password" name="password" id="password" autocomplete="off"/>
+            <i class="bx bxs-lock-alt"></i>
+            <span class="error" id="password-error"></span>
+          </div>
+
+          <button type="submit" class="btn" id="login">Login</button>
+
+          <div class="register-link">
+            <p>
+              Dont Have an Account?
+              <a href="/signup">Sign Up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>

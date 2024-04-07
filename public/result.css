@@ -1,0 +1,148 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  background-color: #457b9d;
+}
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d3557ff;
+  color: aliceblue;
+}
+#el {
+  justify-self: flex-end;
+}
+.header h1 {
+  font-size: 55px;
+}
+#voteing_elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 5px;
+  border-spacing: 50px;
+  background-color: #a8dadcff;
+  border-radius: 25px;
+}
+
+table tr th {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+table tr td {
+  text-align: center;
+  font-size: 30x;
+}
+.container {
+  margin-top: 20px;
+  height: 50px;
+  position: relative;
+  border: 3px;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  right: 47%;
+  -ms-transform: translateY(-150%);
+  transform: translateY(-50%);
+}
+
+
+
+
+table td img {
+  clip-path: circle(50% at 50% 50%);
+}
+
+#logout {
+  margin-right: 100px;
+  height: 40px;
+  width: 80px;
+  padding: 10px;
+  background-color: #457b9d;
+  color: #f1faee;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+main{
+    height: 25vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper{
+    height: 50px;
+    width: 700px;
+
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 35px;
+    padding: 30px 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    
+    
+}
+
+    
+
+
+.winner{
+    height: 50px;
+    width: 690px;
+    padding: 30px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    margin-left:300px;
+    margin-top: 20px;
+
+}
+
+.er{
+    font-size: 40px;
+    padding: 1px 20px;
+    font-weight: 600;
+    margin-left: 240px;
+
+
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    border-spacing: 50px;
+    background-color: #a8dadcff;
+    border-radius: 25px;
+
+}
+
