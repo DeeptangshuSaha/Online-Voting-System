@@ -17,13 +17,16 @@
       <div></div>
     </div>
   </header>
+
+    <form action="/home" method="post">
+<!--        <input type="text" placeholder="Enter Voter ID" name="voterid" required autocomplete="off"/>-->
     <table id="voteing_elements">
       <tr>
         <th>Party Symbol</th>
         <th>Party Name</th>
         <th>Candidate Name</th>
         <th>Candidate Image</th>
-        <th>Vote</th>
+        <!--th>Vote</th-->
       </tr>
       <tr>
         <td>
@@ -45,7 +48,7 @@
             width="100"
           />
         </td>
-        <td><input type="radio" name="Candidate1" required/></td>
+        <!--td><input type="radio" name="Candidate" value="BJP" required/></td-->
       </tr>
 
       <tr>
@@ -69,7 +72,7 @@
             width="100"
           />
         </td>
-        <td><input type="radio" name="Candidate2"  required/></td>
+        <!--td><input type="radio" name="Candidate" value="TMC"  required/></td-->
       </tr>
 
       <tr>
@@ -93,7 +96,7 @@
             width="100"
           />
         </td>
-        <td><input type="radio" name="Candidate3" required/></td>
+        <!--td><input type="radio" name="Candidate" value="INC" required/></td-->
       </tr>
 
       <tr>
@@ -117,15 +120,25 @@
             width="100"
           />
         </td>
-        <td><input type="radio" name="Candidate4" required /></td>
+        <!--td><input type="radio" name="Candidate" value="AAP" required /></td-->
       </tr>
     </table>
+        <div id="drop">
+        <!--label for="cars">Choose a Candidate</label-->
+        <select name="candidate" id="cars">
+            <option value="Narendra Damodardas Modi">Narendra Damodardas Modi</option>
+            <option value="Mamata Banerjee">Mamata Banerjee</option>
+            <option value="Rahul Gandhi">Rahul Gandhi</option>
+            <option value="Arvind Kejriwal">Arvind Kejriwal</option>
+        </select>
+        </div>
 
     <div class="container">
       <div class="vertical-center">
         <button type="submit" class="buttons" id="vote-btn">VOTE</button>
     </div>
 </div>
+</form>
   <form action="/logout" method="get">
     <div class="popup" id="popup">
         <img src="Assets/404-tick.png">

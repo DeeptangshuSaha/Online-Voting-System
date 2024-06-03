@@ -1,5 +1,6 @@
 const mongoose=require("mongoose")
 
+//mongodb://localhost:27017/
 mongoose.connect("mongodb://127.0.0.1:27017/Online_Voting_System")
 .then(() => {
     console.log("Database is Connected");
@@ -26,6 +27,17 @@ const LogInSchema = new mongoose.Schema({
         required:true
     }
 })
+
+// const VoteSchema = new mongoose.Schema({
+//     voterid: {
+//         type:Number,
+//         required:true
+//     },
+//     voted: {
+//         type:Boolean,
+//         require:true
+//     }
+// })
 
 const collection = new mongoose.model("users", LogInSchema)
 module.exports = collection
